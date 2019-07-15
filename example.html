@@ -1,0 +1,20 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <script type="text/javascript" src="paintcanvas.js"></script>
+</head>
+<body style="background: #1080B0">
+  <div id="paintcontainer">
+    <canvas id="paintcanvas" style="border-width: 2; border-style: solid">Requires HTML5 canvas.</canvas>
+  </div>
+  <div id="paintcontainer2" style="margin-top: 10px">
+    <canvas id="paintcanvas2" style="border-width: 2; border-style: solid">Requires HTML5 canvas.</canvas>
+  </div>
+  <script>
+    let canvas1 = new paintCanvas('paintcanvas', 'paintcontainer');
+    let canvas2 = new paintCanvas('paintcanvas2', 'paintcontainer2');
+    canvas2.setBackground("rgb(150,150,150)");
+    canvas2.setSize(1280,720);
+  </script>
+</body>
+</html>
